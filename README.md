@@ -1,3 +1,3 @@
 # OceanStatus
 
-Private project to watch public camera and wind details in one page
+Private project to watch public camera and wind details on one page
