@@ -113,20 +113,6 @@
 
     </style>
 
-    <style>
-        #wrap { width: 600px; height: 390px; padding: 0; overflow: hidden; }
-        #frame { width: 800px; height: 520px; border: 1px solid black; }
-        #frame {
-            -ms-zoom: 0.75;
-            -moz-transform: scale(0.75);
-            -moz-transform-origin: 0 0;
-            -o-transform: scale(0.75);
-            -o-transform-origin: 0 0;
-            -webkit-transform: scale(0.75);
-            -webkit-transform-origin: 0 0;
-        }
-    </style>
-
     <!-- What it does: Makes background images in 72ppi Outlook render at correct size. -->
     <!--[if gte mso 9]>
     <xml>
@@ -154,7 +140,7 @@
 	    }
 
 	    /* Media Queries */
-	    @media screen and (max-width: 600px) {
+	    @media screen and (max-width: 800px) {
 
 	        /* What it does: Adjust typography on small screens to improve readability */
 	        .email-container p {
@@ -183,10 +169,10 @@
 
         <!--
             Set the email width. Defined in two places:
-            1. max-width for all clients except Desktop Windows Outlook, allowing the email to squish on narrow but never go wider than 600px.
-            2. MSO tags for Desktop Windows Outlook enforce a 600px width.
+            1. max-width for all clients except Desktop Windows Outlook, allowing the email to squish on narrow but never go wider than 800px.
+            2. MSO tags for Desktop Windows Outlook enforce a 800px width.
         -->
-        <div style="max-width: 600px; margin: 0 auto;" class="email-container">
+        <div style="max-width: 800px; margin: 0 auto;" class="email-container">
             <!--[if mso]>
             <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600">
             <tr>
@@ -236,7 +222,7 @@
                     <td style="background-color: #ffffff;">
                         <h1 style="margin: 0 0 10px 0; font-family: sans-serif; font-size: 25px; line-height: 30px; color: #333333; font-weight: normal;">Marina Status</h1>
                         <h2 style="margin: 0 0 10px 0; font-family: sans-serif; font-size: 18px; line-height: 22px; color: #333333; font-weight: bold;">Marina Camera</h2>
-                        <iframe frameborder="0" marginheight="1" marginwidth="1" scrolling="no" src="http://62.219.45.26:130/mjpg/video.mjpg" style="width: 600px; height: 450px; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555; margin: auto; display: block;"></iframe>
+                        <img frameborder="0" marginheight="1" marginwidth="1" scrolling="no" src="http://62.219.45.26:130/mjpg/video.mjpg" style="width: 800px; height: 450px; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555; margin: auto; display: block;">
                     </td>
                 </tr>
                             
@@ -251,7 +237,7 @@
                     <td style="background-color: #ffffff;">
                         <h1 style="margin: 0 0 10px 0; font-family: sans-serif; font-size: 25px; line-height: 30px; color: #333333; font-weight: normal;">Sdot Yam Status</h1>
                         <h2 style="margin: 0 0 10px 0; font-family: sans-serif; font-size: 18px; line-height: 22px; color: #333333; font-weight: bold;">Sdot Yam Camera</h2>
-                        <iframe frameborder="0" marginheight="1" marginwidth="1" scrolling="no" src="https://g0.ipcamlive.com/player/player.php?alias=freegullsouth" allowfullscreen="allowfullscreen" style="width: 100%; height: 600px; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555; margin: auto; display: block;"></iframe>
+                        <iframe frameborder="0" marginheight="1" marginwidth="1" scrolling="no" src="https://g0.ipcamlive.com/player/player.php?alias=freegullsouth" allowfullscreen="allowfullscreen" style="width: 100%; height: 800px; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555; margin: auto; display: block;"></iframe>
                         <h2 style="margin: 0 0 10px 0; font-family: sans-serif; font-size: 18px; line-height: 22px; color: #333333; font-weight: bold;">Current Wind</h2>
                         <img src="https://wind.co.il/weather/lab/broadcast.jpg?_ts=1550326802" width="600" height="" alt="alt_text" border="0" style="" class="g-img">
                         <img src="https://wind.co.il/weather/lab/vws736.jpg?_ts=1550326772" width="600" height="" alt="alt_text" border="0" style="" class="g-img">
@@ -299,7 +285,7 @@
         <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #709f2b;">
             <tr>
                 <td>
-                    <div align="center" style="max-width: 600px; margin: auto;" class="email-container">
+                    <div align="center" style="max-width: 800px; margin: auto;" class="email-container">
                         <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                             <tr>
                                 <td style="padding: 20px; text-align: left; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #ffffff;">
