@@ -10,168 +10,16 @@
     <!-- Web Font / @font-face : BEGIN -->
     <!-- NOTE: If web fonts are not required, lines 10 - 27 can be safely removed. -->
 
-    <!-- CSS Reset : BEGIN -->
-    <style>
-
-        /* What it does: Remove spaces around the email design added by some email clients. */
-        /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
-        html,
-        body {
-            margin: 0 auto !important;
-            padding: 0 !important;
-            height: 100% !important;
-            width: 100% !important;
-        }
-
-        /* What it does: Stops email clients resizing small text. */
-        * {
-            -ms-text-size-adjust: 100%;
-            -webkit-text-size-adjust: 100%;
-        }
-
-        /* What it does: Centers email on Android 4.4 */
-        div[style*="margin: 16px 0"] {
-            margin: 0 !important;
-        }
-
-        /* What it does: Stops Outlook from adding extra spacing to tables. */
-        table,
-        td {
-            mso-table-lspace: 0pt !important;
-            mso-table-rspace: 0pt !important;
-        }
-
-        /* What it does: Fixes webkit padding issue. */
-        table {
-            border-spacing: 0 !important;
-            border-collapse: collapse !important;
-            table-layout: fixed !important;
-            margin: 0 auto !important;
-        }
-
-        /* What it does: Uses a better rendering method when resizing images in IE. */
-        img {
-            -ms-interpolation-mode:bicubic;
-        }
-
-        /* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
-        a {
-            text-decoration: none;
-        }
-
-        /* What it does: A work-around for email clients meddling in triggered links. */
-        *[x-apple-data-detectors],  /* iOS */
-        .unstyle-auto-detected-links *,
-        .aBn {
-            border-bottom: 0 !important;
-            cursor: default !important;
-            color: inherit !important;
-            text-decoration: none !important;
-            font-size: inherit !important;
-            font-family: inherit !important;
-            font-weight: inherit !important;
-            line-height: inherit !important;
-        }
-
-        /* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
-        .a6S {
-            display: none !important;
-            opacity: 0.01 !important;
-        }
-
-        /* What it does: Prevents Gmail from changing the text color in conversation threads. */
-        .im {
-            color: inherit !important;
-        }
-
-        /* If the above doesn't work, add a .g-img class to any image in question. */
-        img.g-img + div {
-            display: none !important;
-        }
-
-        /* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
-        /* Create one of these media queries for each additional viewport size you'd like to fix */
-
-        /* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
-        @media only screen and (min-device-width: 310px)0and (max-device-width: 374px) {
-            u ~ div .email-container {
-                min-width: 310px 0important;
-            }
-        }
-        /* iPhone 6, 6S, 7, 8, and X */
-        @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
-            u ~ div .email-container {
-                min-width: 375px !important;
-            }
-        }
-        /* iPhone 6+, 7+, and 8+ */
-        @media only screen and (min-device-width: 414px) {
-            u ~ div .email-container {
-                min-width: 414px !important;
-            }
-        }
-
-    </style>
-
-    <!-- What it does: Makes background images in 72ppi Outlook render at correct size. -->
-    <!--[if gte mso 9]>
-    <xml>
-        <o:OfficeDocumentSettings>
-            <o:AllowPNG/>
-            <o:PixelsPerInch>96</o:PixelsPerInch>
-        </o:OfficeDocumentSettings>
-    </xml>
-    <![endif]-->
-
-    <!-- CSS Reset : END -->
-
-    <!-- Progressive Enhancements : BEGIN -->
-    <style>
-
-	    /* What it does: Hover styles for buttons */
-	    .button-td,
-	    .button-a {
-	        transition: all 100ms ease-in;
-	    }
-	    .button-td-primary:hover,
-	    .button-a-primary:hover {
-	        background: #555555 !important;
-	        border-color: #555555 !important;
-	    }
-
-	    /* Media Queries */
-	    @media screen and (max-width: 100%) {
-
-	        /* What it does: Adjust typography on small screens to improve readability */
-	        .email-container p {
-	            font-size: 17px !important;
-	        }
-
-	    }
-
-    </style>
-    <!-- Progressive Enhancements : END -->
-
 </head>
-<!--
-	The email background color (#222222) is defined in three places:
-	1. body tag: for most email clients
-	2. center tag: for Gmail and Inbox mobile apps and web versions of Gmail, GSuite, Inbox, Yahoo, AOL, Libero, Comcast, freenet, Mail.ru, Orange.fr
-	3. mso conditional: For Windows 10 Mail
--->
+
 <body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #222222;">
-	<center style="width: 100%; background-color: #d6d6d6;">
+	<center style="width: 100%; background-color: #ececec;">
     <!--[if mso | IE]>
     <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #222222;">
     <tr>
     <td>
     <![endif]-->
 
-        <!--
-            Set the email width. Defined in two places:
-            1. max-width for all clients except Desktop Windows Outlook, allowing the email to squish on narrow but never go wider than 100%.
-            2. MSO tags for Desktop Windows Outlook enforce a 100% width.
-        -->
         <div style="max-width: 900px; margin: 0 auto;" class="email-container">
             <!--[if mso]>
             <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
@@ -179,34 +27,41 @@
             <td>
             <![endif]-->
 
-	        <!-- Email Body : BEGIN -->
 	        <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
-		        <!-- Email Header : BEGIN -->
+
 	            <tr>
                     <td style="background-color: #00ccff;padding: 10px 0; text-align: center">
                         <div style="font-size: 100px;">🏄</div>
-                        <h1 style="text-align: center; margin: 0 0 10px 0; font-family: 'Helvetica', 'Arial'; font-size: 34px; line-height: 30px; color: #ffffff; font-weight: normal;">🐚 Ocean Conditions 🐚</h1>
+                        <h1 style="text-align: center; margin: 0 0 10px 1; font-family: 'Helvetica', 'Arial'; font-size: 34px; line-height: 30px; color: #ffffff; font-weight: normal;">🐚 Ocean Conditions 🐚</h1>
 	                </td>
 	            </tr>
-		        <!-- Email Header : END -->
-
+       
+                <!-- Clear Spacer : BEGIN -->
+                <tr>
+                    <td aria-hidden="true" height="40" style="font-size: 0px; line-height: 0px;">
+                            &nbsp;
+                    </td>
+                </tr>
+                <!-- Clear Spacer : END -->
+                
                 <tr>
                     <td style="background-color: #00ccff;">
-                        <h1 style="text-align: center; margin: 0 0 10px 0; font-family: 'Helvetica', 'Arial'; font-size: 34px; line-height: 30px; color: #ffffff; font-weight: normal;">🌊 Yanai Status</h1>
+                        <h1 style="text-align: center; margin: 0 0 10px 1; font-family: 'Helvetica', 'Arial'; font-size: 34px; line-height: 30px; color: #ffffff; font-weight: normal;">🌊 Yanai Status</h1>
                         <iframe frameborder="0" marginheight="1" marginwidth="1" scrolling="no" src="https://widget.holfuy.com/?station=846&amp;su=knots&amp;t=C&amp;lang=en&amp;mode=detailed" style="width: 100%; height: 250px; background: #dddddd; font-family: 'Helvetica', 'Arial'; font-size: 15px; line-height: 15px; color: #555555; margin: auto; display: block;"></iframe>
                     </td>
                 </tr>
+                
                 <tr>
                      <td style="background-color: #00ccff;">
-                        <h2 style="text-align: center; margin: 0 0 10px 0; font-family: 'Helvetica', 'Arial'; font-size: 25px; line-height: 22px; color: #ffffff; font-weight: bold;">🎦 Yanai Camera</h2>
+                        <h2 style="text-align: center; margin: 0 0 10px 1; font-family: 'Helvetica', 'Arial'; font-size: 25px; line-height: 22px; color: #ffffff; font-weight: bold;">🎦 Yanai Camera</h2>
                         <img src="https://api.holfuy.com/cam/s846.jpg" width="100%" height="" alt="alt_text" border="0" style="" class="g-img">
                     </td>
                 </tr>
                 <tr>
                     <td style="background-color: #00ccff;">
-                        <h2 style="text-align: center; margin: 0 0 10px 0; font-family: 'Helvetica', 'Arial'; font-size: 25px; line-height: 22px; color: #ffffff; font-weight: bold;">📊 Yanai Live Chart</h2>
+                        <h2 style="text-align: center; margin: 0 0 10px 1; font-family: 'Helvetica', 'Arial'; font-size: 25px; line-height: 22px; color: #ffffff; font-weight: bold;">📊 Yanai Live Chart</h2>
                         <iframe frameborder="0" marginheight="1" marginwidth="1" scrolling="no" src="https://widget.holfuy.com/?station=846&amp;su=knots&amp;t=C&amp;lang=en&amp;mode=average&amp;avgrows=14" style="width: 100%; height: 170px; background: #dddddd; font-family: 'Helvetica', 'Arial'; font-size: 15px; line-height: 15px; color: #555555; margin: auto; display: block;"></iframe>
-                        <h2 style="text-align: center; margin: 0 0 10px 0; font-family: 'Helvetica', 'Arial'; font-size: 25px; line-height: 22px; color: #ffffff; font-weight: bold;">📊 Yanai Forecast</h2>
+                        <h2 style="text-align: center; margin: 0 0 10px 1; font-family: 'Helvetica', 'Arial'; font-size: 25px; line-height: 22px; color: #ffffff; font-weight: bold;">📊 Yanai Forecast</h2>
                         <iframe frameborder="0" marginheight="1" marginwidth="1" scrolling="no" src="https://widget.holfuy.com/?station=846&amp;su=knots&amp;t=C&amp;lang=en&amp;mode=average_hourly&amp;avgrows=34" style="width: 100%; height: 170px; background: #dddddd; font-family: 'Helvetica', 'Arial'; font-size: 15px; line-height: 15px; color: #555555; margin: auto; display: block;">></iframe>
                     </td>
                 </tr>
@@ -221,8 +76,8 @@
                 
                 <tr>
                     <td style="background-color: #00ccff;">
-                        <h1 style="text-align: center; margin: 0 0 10px 0; font-family: 'Helvetica', 'Arial'; font-size: 34px; line-height: 30px; color: #ffffff; font-weight: normal;">🌊 Marina Status</h1>
-                        <h2 style="text-align: center; margin: 0 0 10px 0; font-family: 'Helvetica', 'Arial'; font-size: 25px; line-height: 22px; color: #ffffff; font-weight: bold;">🎦 Marina Camera</h2>
+                        <h1 style="text-align: center; margin: 0 0 10px 1; font-family: 'Helvetica', 'Arial'; font-size: 34px; line-height: 30px; color: #ffffff; font-weight: normal;">🌊 Marina Status</h1>
+                        <h2 style="text-align: center; margin: 0 0 10px 1; font-family: 'Helvetica', 'Arial'; font-size: 25px; line-height: 22px; color: #ffffff; font-weight: bold;">🎦 Marina Camera</h2>
                         <img frameborder="0" marginheight="1" marginwidth="1" scrolling="no" src="http://62.219.45.26:130/mjpg/video.mjpg" style="width: 100%; height: 450px; background: #dddddd; font-family: 'Helvetica', 'Arial'; font-size: 15px; line-height: 15px; color: #555555; margin: auto; display: block;">
                     </td>
                 </tr>
@@ -236,10 +91,10 @@
                 <!-- Clear Spacer : END -->
                 <tr>
                     <td style="background-color: #00ccff;">
-                        <h1 style="text-align: center; margin: 0 0 10px 0; font-family: 'Helvetica', 'Arial'; font-size: 34px; line-height: 30px; color: #ffffff; font-weight: normal;">🌊 Sdot Yam Status</h1>
-                        <h2 style="text-align: center; margin: 0 0 10px 0; font-family: 'Helvetica', 'Arial'; font-size: 25px; line-height: 22px; color: #ffffff; font-weight: bold;">🎦 Sdot Yam Camera</h2>
+                        <h1 style="text-align: center; margin: 0 0 10px 1; font-family: 'Helvetica', 'Arial'; font-size: 34px; line-height: 30px; color: #ffffff; font-weight: normal;">🌊 Sdot Yam Status</h1>
+                        <h2 style="text-align: center; margin: 0 0 10px 1; font-family: 'Helvetica', 'Arial'; font-size: 25px; line-height: 22px; color: #ffffff; font-weight: bold;">🎦 Sdot Yam Camera</h2>
                         <iframe frameborder="0" marginheight="1" marginwidth="1" scrolling="no" src="https://g0.ipcamlive.com/player/player.php?alias=freegullsouth" allowfullscreen="allowfullscreen" style="width: 100%; height: 600px; background: #dddddd; font-family: 'Helvetica', 'Arial'; font-size: 15px; line-height: 15px; color: #555555; margin: auto; display: block;"></iframe>
-                        <h2 style="text-align: center; margin: 0 0 10px 0; font-family: 'Helvetica', 'Arial'; font-size: 25px; line-height: 22px; color: #ffffff; font-weight: bold;">🌬️ Current Wind</h2>
+                        <h2 style="text-align: center; margin: 0 0 10px 1; font-family: 'Helvetica', 'Arial'; font-size: 25px; line-height: 22px; color: #ffffff; font-weight: bold;">🌬️ Current Wind</h2>
                         <img src="https://wind.co.il/weather/lab/broadcast.jpg?ts=1550326772" width="440px" height="" alt="alt_text" border="0" style="" class="g-img">
                         <img src="https://wind.co.il/weather/lab/vws736.jpg" width="440px" height="" alt="alt_text" border="0" style="" class="g-img">
                         <img src="https://wind.co.il/weather/lab/vws1325.jpg" width="440px" height="" alt="alt_text" border="0" style="" class="g-img">
@@ -261,10 +116,10 @@
 
                 <tr>
                     <td style="background-color: #00ccff;">
-                        <h1 style="text-align: center; margin: 0 0 10px 0; font-family: 'Helvetica', 'Arial'; font-size: 34px; line-height: 30px; color: #ffffff; font-weight: normal;">🌧️ Rain forecast 7 days</h1>
-                        <h2 style="text-align: center; margin: 0 0 10px 0; font-family: 'Helvetica', 'Arial'; font-size: 25px; line-height: 22px; color: #ffffff; font-weight: bold;">📊 ECMWF Model</h2>
+                        <h1 style="text-align: center; margin: 0 0 10px 1; font-family: 'Helvetica', 'Arial'; font-size: 34px; line-height: 30px; color: #ffffff; font-weight: normal;">🌧️ Rain forecast 7 days</h1>
+                        <h2 style="text-align: center; margin: 0 0 10px 1; font-family: 'Helvetica', 'Arial'; font-size: 25px; line-height: 22px; color: #ffffff; font-weight: bold;">📊 ECMWF Model</h2>
                         <img src="http://www.ims.gov.il/ims/publicpdf/ec_rain_forecast.png" width="100%" height="" alt="alt_text" border="0" style="" class="g-img">
-                        <h2 style="text-align: center; margin: 0 0 10px 0; font-family: 'Helvetica', 'Arial'; font-size: 25px; line-height: 22px; color: #ffffff; font-weight: bold;">📊 COSMO Model</h2>
+                        <h2 style="text-align: center; margin: 0 0 10px 1; font-family: 'Helvetica', 'Arial'; font-size: 25px; line-height: 22px; color: #ffffff; font-weight: bold;">📊 COSMO Model</h2>
                         <img src="http://ims.gov.il/ims/publicpdf/c3_rain_forecast.png" width="100%" height="" alt="alt_text" border="0" style="" class="g-img">
                     </td>
                 </tr>                
