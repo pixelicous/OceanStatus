@@ -1,217 +1,145 @@
+
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<html lang="en">
 <head>
-    <meta charset="utf-8"> <!-- utf-8 works for most cases -->
-    <meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
-    <title>Ocean Status</title> <!-- The title tag shows in email notifications, like Android 4.4. -->
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+  <title>OCEAN|LABS</title>
+
+  <!-- General CSS Files -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+  <!-- CSS Libraries -->
+
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+      .embed-responsive-10by3 {
+   padding-top: 30%;
+}
+      .embed-responsive-10by5 {
+   padding-top: 45%;
+}
+  </style>
 </head>
 
-<body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #222222;">
-	<center style="width: 100%; background-color: #ececec;">
-    <!--[if mso | IE]>
-    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #222222;">
-    <tr>
-    <td>
-    <![endif]-->
-
-    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #000000;">
-        <tr>
-            <td>
-                <div align="center" style="max-width: 100%; margin: auto;" class="email-container">
-                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                        <tr>
-                            <td style="padding: 10px;text-align: center; font-family: 'Helvetica', 'Arial'; font-size: 15px; line-height: 10px;color: #ffffff;">
-                                <p style="margin: 0;"></p>
-                            </td>
-                        </tr>
-                    </table>
+<body>
+  <div id="app">
+    <section class="section">
+      <div class="container mt-5">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-7 offset-md-1 col-lg-7 offset-lg-1">
+              
+              <div class="login-brand mb-1 text-primary">
+                <i class="fa fa-water fa-1x p-0 m-1 text-muted"></i> OCEAN|LABS
+            </div>
+            <div class="text-center mb-3 text-small">
+                Please do not share this service <i class="fa fa-heart text-primary"></i>
+            </div>
+            
+            <div class="card card-primary">
+                <div class="card-header"><h4>Beit Yanai Status</h4></div>
+                <div class="card-body">
+                    <div class="card-title text-info"><h4><i class="fa fa-satellite-dish text-muted"></i> Wind Stations</h4></div>
+                    <div class="embed-responsive embed-responsive-10by5 mb-0 pb-0">
+                        <embed class="embed-responsive-item m-0 p-0" src="https://widget.holfuy.com/?station=846&amp;su=knots&amp;t=C&amp;lang=en&amp;mode=detailed" allowfullscreen></iframe>
+                      </div>
+                    <div class="card-title text-info"><h4><i class="fa fa-camera text-muted"></i> Camera</h4></div>
+                    <img class="card-img-bottom" src="https://api.holfuy.com/cam/s846.jpg" />
+                    <div class="card-title text-info mt-2"><h4><i class="fa fa-wind text-muted"></i> Live Conditions</h4></div>
+                    <div class="card-title text-primary"><h6>3 hour sliding window</h6></div>
+                    <div class="embed-responsive embed-responsive-10by3 mb-0 pb-0">
+                        <embed class="embed-responsive-item m-0 p-0" src="https://widget.holfuy.com/?station=846&amp;su=knots&amp;t=C&amp;lang=en&amp;mode=average&amp;avgrows=14" allowfullscreen></iframe>
+                      </div>
+                    <div class="card-title text-primary"><h6>24 non live forecast</h6></div>
+                    <div class="embed-responsive embed-responsive-10by3 m-0">
+                        <embed class="embed-responsive-item m-0 p-0" src="https://widget.holfuy.com/?station=846&amp;su=knots&amp;t=C&amp;lang=en&amp;mode=average_hourly&amp;avgrows=34" allowfullscreen></iframe>
+                    </div>
                 </div>
-            </td>
-        </tr>
-    </table>
-    <!-- <div style="max-width: 850px; margin: 0 auto;" class="email-container"></div> -->
-    <div style="margin: 0 auto;" class="email-container">
-        <!--[if mso]>
-        <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-        <tr>
-        <td>
-        <![endif]-->
+            </div>
 
-        
-        <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
-
-            <tr>
-                <td style="background-color: #32cf93;padding: 10px 0; text-align: center;">
-                    <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0">
-                            <tr>
-                                <td>
-                                    <div style="font-size: 100px;">🏄</div>
-                                </td>
-                                <td style="vertical-align: center; padding-left: 40px">
-                                    <h1 style="text-align: center; margin: 5 5 10px 10; font-family: 'Helvetica', 'Arial'; font-size: 34px; line-height: 30px; color: rgb(255, 228, 146); font-weight: normal;">Ocean Conditions </h1>
-                                </td>
-                            </tr>
-                    </table>
-                </td>
-            </tr>
-    
-            <!-- Clear Spacer : BEGIN -->
-            <tr>
-                <td aria-hidden="true" height="40" style="font-size: 0px; line-height: 0px;">
-                        &nbsp;
-                </td>
-            </tr>
-            <!-- Clear Spacer : END -->
-            <tr>
-                <td style="background-color: #32cf93; text-align: center; width: 100%; ">
-                    <h1 style="text-align: center; margin: 0 0 10px 1; font-family: 'Helvetica', 'Arial'; font-size: 34px; line-height: 30px; color: #ffffff; font-weight: normal;">🌊 Beit Yanai Status</h1>
-                    <iframe frameborder="0" marginheight="1" marginwidth="1" scrolling="no" src="https://widget.holfuy.com/?station=846&amp;su=knots&amp;t=C&amp;lang=en&amp;mode=detailed" style="display: inline-block; width: 580px; height: 250px; background: #dddddd; font-family: 'Helvetica', 'Arial'; font-size: 15px; line-height: 15px; color: #555555; margin: auto; display: block;"></iframe>
-                </td>
-            </tr>
-            <tr>
-                <td style="background-color: #32cf93; text-align: center; width: 100%; ">
-                    <h2 style="text-align: center; margin: 0 0 10px 1; font-family: 'Helvetica', 'Arial'; font-size: 25px; line-height: 22px; color: #ffffff; font-weight: bold;">🎦 Yanai camera</h2>
-                        <img src="https://api.holfuy.com/cam/s846.jpg" width="850px" height="" alt="alt_text" border="0" style="" class="g-img">
-                </td>
-            </tr>
-            <tr>
-                <td style="background-color: #32cf93; text-align: center; width: 100%; ">
-                    <h2 style="text-align: center; margin: 0 0 10px 1; font-family: 'Helvetica', 'Arial'; font-size: 25px; line-height: 22px; color: #ffffff; font-weight: bold;">📊 Yanai 3hrs live wind stats</h2>
-                    <iframe frameborder="0" marginheight="1" marginwidth="1" scrolling="no" src="https://widget.holfuy.com/?station=846&amp;su=knots&amp;t=C&amp;lang=en&amp;mode=average&amp;avgrows=14" style="width: 570px; height: 170px; background: #dddddd; font-family: 'Helvetica', 'Arial'; font-size: 15px; line-height: 15px; color: #555555; margin: auto; display: block;"></iframe>
-                    <h2 style="text-align: center; margin: 0 0 10px 1; font-family: 'Helvetica', 'Arial'; font-size: 25px; line-height: 22px; color: #ffffff; font-weight: bold;">📊 Yanai 33hrs wind forecast (scrollable)</h2>
-                    <iframe frameborder="0" marginheight="1" marginwidth="1" scrolling="no" src="https://widget.holfuy.com/?station=846&amp;su=knots&amp;t=C&amp;lang=en&amp;mode=average_hourly&amp;avgrows=34" style="width: 850px; height: 170px; background: #dddddd; font-family: 'Helvetica', 'Arial'; font-size: 15px; line-height: 15px; color: #555555; margin: auto; display: block;">></iframe>
-                </td>
-            </tr>
-                    
-            <!-- Clear Spacer : BEGIN -->
-            <tr>
-                <td aria-hidden="true" height="40" style="font-size: 0px; line-height: 0px;">
-                        &nbsp;
-                </td>
-            </tr>
-            <!-- Clear Spacer : END -->
-                        
-            <tr>
-                <td style="background-color: #32cf93; text-align: center; width: 100%; ">
-                    <h1 style="text-align: center; margin: 0 0 10px 1; font-family: 'Helvetica', 'Arial'; font-size: 34px; line-height: 30px; color: #ffffff; font-weight: normal;">🌊 Hertzelia Status</h1>
-                    <h2 style="text-align: center; margin: 0 0 10px 1; font-family: 'Helvetica', 'Arial'; font-size: 25px; line-height: 22px; color: #ffffff; font-weight: bold;">🎦 Dromi Camera (Click for fullscreen)</h2>
-                    <a href="http://62.219.45.26:120/mjpg/video.mjpg" target="_blank"><img frameborder="0" marginheight="1" marginwidth="1" scrolling="no" src="http://62.219.45.26:120/mjpg/video.mjpg" style="width: 100%; height: 450px; background: #dddddd; font-family: 'Helvetica', 'Arial'; font-size: 15px; line-height: 15px; color: #555555; margin: auto; display: block;"></a>
-                    <h2 style="text-align: center; margin: 0 0 10px 1; font-family: 'Helvetica', 'Arial'; font-size: 25px; line-height: 22px; color: #ffffff; font-weight: bold;">🎦 Marina Camera (Click for fullscreen)</h2>
-                    <a href="http://62.219.45.26:130/mjpg/video.mjpg" target="_blank"><img frameborder="0" marginheight="1" marginwidth="1" scrolling="no" src="http://62.219.45.26:130/mjpg/video.mjpg" style="width: 100%; height: 450px; background: #dddddd; font-family: 'Helvetica', 'Arial'; font-size: 15px; line-height: 15px; color: #555555; margin: auto; display: block;"></a>
-                    <h2 style="text-align: center; margin: 0 0 10px 1; font-family: 'Helvetica', 'Arial'; font-size: 25px; line-height: 22px; color: #ffffff; font-weight: bold;">🎦 Marina Camera 2</h2>
-                    <iframe width="800" height="500" src="https://www.youtube.com/embed/nrqYweX5oes" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <h2 style="text-align: center; margin: 0 0 10px 1; font-family: 'Helvetica', 'Arial'; font-size: 25px; line-height: 22px; color: #ffffff; font-weight: bold;">🎦 Hatzuk Camera 2</h2>
-                    <iframe width="800" height="500" src="https://www.youtube.com/embed/live_stream?channel=UCroZaDar2JEA0vQbJIKHrmw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </td>
-            </tr>
-    
-            <!-- Clear Spacer : BEGIN -->
-            <tr>
-                <td aria-hidden="true" height="40" style="font-size: 0px; line-height: 0px;">
-                    &nbsp;
-                </td>
-            </tr>
-            <!-- Clear Spacer : END -->
-            <tr>
-                <td style="background-color: #32cf93; text-align: center; width: 100%; ">
-                    <h1 style="text-align: center; margin: 0 0 10px 1; font-family: 'Helvetica', 'Arial'; font-size: 34px; line-height: 30px; color: #ffffff; font-weight: normal;">🌊 Sdot Yam Status</h1>
-                    <h2 style="text-align: center; margin: 0 0 10px 1; font-family: 'Helvetica', 'Arial'; font-size: 25px; line-height: 22px; color: #ffffff; font-weight: bold;">🎦 Sdot Yam Camera</h2>
-                    <iframe frameborder="0" marginheight="1" marginwidth="1" scrolling="no" src="https://g0.ipcamlive.com/player/player.php?alias=freegullsouth" allowfullscreen="allowfullscreen" style="width: 100%; height: 600px; background: #dddddd; font-family: 'Helvetica', 'Arial'; font-size: 15px; line-height: 15px; color: #555555; margin: auto; display: block;"></iframe>
-                    <h2 style="text-align: center; margin: 0 0 10px 1; font-family: 'Helvetica', 'Arial'; font-size: 25px; line-height: 22px; color: #ffffff; font-weight: bold;">🌬️ Current Wind</h2>
-                    <img src="https://wind.co.il/weather/lab/broadcast.jpg?ts=1550326772" width="280px" height="" alt="alt_text" border="0" style="" class="g-img">
-                    <img src="https://wind.co.il/weather/lab/vws736.jpg" width="280px" height="" alt="alt_text" border="0" style="" class="g-img">
-                    <img src="https://wind.co.il/weather/lab/vws1325.jpg" width="280px" height="" alt="alt_text" border="0" style="" class="g-img">
-                    <img src="https://wind.co.il/weather/lab/vws737.jpg" width="280px" height="" alt="alt_text" border="0" style="" class="g-img">
-                    <img src="https://wind.co.il/weather/lab/vws738.jpg" width="280px" height="" alt="alt_text" border="0" style="" class="g-img">
-                    <img src="https://wind.co.il/weather/lab/vws741.jpg" width="280px" height="" alt="alt_text" border="0" style="" class="g-img">
-                    <img src="https://wind.co.il/weather/lab/vws743.jpg" width="280px" height="" alt="alt_text" border="0" style="" class="g-img">
-                    <img src="https://wind.co.il/weather/lab/vws758.jpg" width="280px" height="" alt="alt_text" border="0" style="" class="g-img">
-                </td>
-            </tr>
-                                
-            <!-- Clear Spacer : BEGIN -->
-            <tr>
-                <td aria-hidden="true" height="40" style="font-size: 0px; line-height: 0px;">
-                    &nbsp;
-                </td>
-            </tr>
-            <!-- Clear Spacer : END -->
-
-            <tr>
-                <td style="background-color: #32cf93; text-align: center; width: 100%; ">
-                    <h1 style="text-align: center; margin: 0 0 10px 1; font-family: 'Helvetica', 'Arial'; font-size: 34px; line-height: 30px; color: #ffffff; font-weight: normal;">🌊 Tel Aviv Status</h1>
-                    <h2 style="text-align: center; margin: 0 0 10px 1; font-family: 'Helvetica', 'Arial'; font-size: 25px; line-height: 22px; color: #ffffff; font-weight: bold;">🎦 Dolphinarium Camera</h2>
-                    <iframe width="850px" height="500" src="https://www.youtube.com/embed/YGvNt7ldg9M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </td>
-            </tr>
-                                
-            <!-- Clear Spacer : BEGIN -->
-                <tr>
-                <td aria-hidden="true" height="40" style="font-size: 0px; line-height: 0px;">
-                    &nbsp;
-                </td>
-            </tr>
-            <!-- Clear Spacer : END -->
-
-            <tr>
-                <td style="background-color: #32cf93; text-align: center; width: 100%; ">
-                    <h1 style="text-align: center; margin: 0 0 10px 1; font-family: 'Helvetica', 'Arial'; font-size: 34px; line-height: 30px; color: #ffffff; font-weight: normal;">🌊 Haifa Status</h1>
-                    <h2 style="text-align: center; margin: 0 0 10px 1; font-family: 'Helvetica', 'Arial'; font-size: 25px; line-height: 22px; color: #ffffff; font-weight: bold;">🎦 Bat Galim Camera</h2>
-                    <iframe width="850px" height="500" src="https://www.youtube.com/embed/m-R8Hea3PNI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </td>
-            </tr>
-
-            <!-- Clear Spacer : BEGIN -->
-            <tr>
-                <td aria-hidden="true" height="40" style="font-size: 0px; line-height: 0px;">
-                    &nbsp;
-                </td>
-            </tr>
-            <!-- Clear Spacer : END -->
-
-            <tr>
-                <td style="background-color: #32cf93;">
-                    <h1 style="text-align: center; margin: 0 0 10px 1; font-family: 'Helvetica', 'Arial'; font-size: 34px; line-height: 30px; color: #ffffff; font-weight: normal;">🌧️ Rain forecast 7 days</h1>
-                    <h2 style="text-align: center; margin: 0 0 10px 1; font-family: 'Helvetica', 'Arial'; font-size: 25px; line-height: 22px; color: #ffffff; font-weight: bold;">📊 ECMWF Model</h2>
-                    <img src="http://www.ims.gov.il/ims/publicpdf/ec_rain_forecast.png" width="100%" height="" alt="alt_text" border="0" style="" class="g-img">
-                    <h2 style="text-align: center; margin: 0 0 10px 1; font-family: 'Helvetica', 'Arial'; font-size: 25px; line-height: 22px; color: #ffffff; font-weight: bold;">📊 COSMO Model</h2>
-                    <img src="http://ims.gov.il/ims/publicpdf/c3_rain_forecast.png" width="100%" height="" alt="alt_text" border="0" style="" class="g-img">
-                </td>
-            </tr>                
-                    
-                        
-        </table>
-        <!-- Email Body : END -->
-
-        <!--[if mso]>
-        </td>
-        </tr>
-        </table>
-        <![endif]-->
-    </div>
-
-    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #000000;">
-        <tr>
-            <td>
-                <div align="center" style="max-width: 100%; margin: auto;" class="email-container">
-                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                        <tr>
-                            <td style="padding: 10px;text-align: center; font-family: 'Helvetica', 'Arial'; font-size: 15px; line-height: 10px;color: #ffffff;">
-                                <p style="margin: 0;">This site is used for private purposes.<br><br>All data in the website is pulled from public external sources.</p>
-                            </td>
-                        </tr>
-                    </table>
+            <div class="card card-primary">
+                <div class="card-header"><h4>Hertzelia Status</h4></div>
+                <div class="card-body">
+                    <div class="card-title text-info"><h4><i class="fa fa-satellite-dish text-muted"></i> Marina</h4></div>
+                    <div class="embed-responsive embed-responsive-16by9 mb-0 pb-0">
+                        <embed class="embed-responsive-item m-0 p-0" src="https://www.youtube.com/embed/nrqYweX5oes" allowfullscreen></iframe>
+                      </div>
+                    <div class="card-title text-info"><h4><i class="fa fa-camera text-muted"></i> Dromi</h4></div>
+                    <img class="card-img-bottom" src="http://62.219.45.26:120/mjpg/video.mjpg" />
+                    <div class="card-title text-info"><h4><i class="fa fa-camera text-muted"></i> Marina 2</h4></div>
+                    <img class="card-img-bottom" src="http://62.219.45.26:130/mjpg/video.mjpg" />
+                    <div class="card-title text-info"><h6>Hatzuk</h6></div>
+                    <div class="embed-responsive embed-responsive-16by9 mb-0 pb-0">
+                        <embed class="embed-responsive-item m-0 p-0" src="https://www.youtube.com/embed/live_stream?channel=UCroZaDar2JEA0vQbJIKHrmw" allowfullscreen></iframe>
+                      </div>
                 </div>
-            </td>
-        </tr>
-    </table>
-    <!--[if mso | IE]>
-    </td>
-    </tr>
-    </table>
-    <![endif]-->
-    </center>
+            </div>
+           
+            <div class="card card-primary">
+                <div class="card-header"><h4>Sdot Yam Status</h4></div>
+                <div class="card-body">
+                    <div class="card-title text-info"><h4><i class="fa fa-satellite-dish text-muted"></i> Camera</h4></div>
+                    <div class="embed-responsive embed-responsive-16by9 mb-0 pb-0">
+                        <embed class="embed-responsive-item m-0 p-0" src="https://g0.ipcamlive.com/player/player.php?alias=freegullsouth" allowfullscreen></iframe>
+                      </div>
+                      <div class="card-title text-info mt-2"><h4><i class="fa fa-wind text-muted"></i> Live Conditions</h4></div>
+                      <img class="card-img-bottom" src="https://wind.co.il/weather/lab/broadcast.jpg?ts=1550326772" />
+                      <img class="card-img-bottom" src="https://wind.co.il/weather/lab/vws736.jpg" />
+                      <img class="card-img-bottom" src="https://wind.co.il/weather/lab/vws1325.jpg" />
+                      <img class="card-img-bottom" src="https://wind.co.il/weather/lab/vws737.jpg" />
+                      <img class="card-img-bottom" src="https://wind.co.il/weather/lab/vws738.jpg" />
+                      <img class="card-img-bottom" src="https://wind.co.il/weather/lab/vws741.jpg" />
+                      <img class="card-img-bottom" src="https://wind.co.il/weather/lab/vws743.jpg" />
+                      <img class="card-img-bottom" src="https://wind.co.il/weather/lab/vws758.jpg" />
+                </div>
+            </div>
+
+            <div class="card card-primary">
+                <div class="card-header"><h4>Tel Aviv Status</h4></div>
+                <div class="card-body">
+                    <div class="card-title text-info"><h4><i class="fa fa-satellite-dish text-muted"></i>Dolphinarium Camera</h4></div>
+                    <div class="embed-responsive embed-responsive-16by9 mb-0 pb-0">
+                        <embed class="embed-responsive-item m-0 p-0" src="https://www.youtube.com/embed/YGvNt7ldg9M" allowfullscreen></iframe>
+                      </div>
+                </div>
+            </div>
+
+            <div class="card card-primary">
+                <div class="card-header"><h4>Haifa Status</h4></div>
+                <div class="card-body">
+                    <div class="card-title text-info"><h4><i class="fa fa-satellite-dish text-muted"></i>Bat Galim Camera</h4></div>
+                    <div class="embed-responsive embed-responsive-16by9 mb-0 pb-0">
+                        <embed class="embed-responsive-item m-0 p-0" src="https://www.youtube.com/embed/m-R8Hea3PNI" allowfullscreen></iframe>
+                      </div>
+                </div>
+            </div>
+
+            <div class="card card-primary">
+                <div class="card-header"><h4>Rain Forecast</h4></div>
+                <div class="card-body">
+                    <div class="card-title text-info"><h4><i class="fa fa-satellite-dish text-muted"></i> ECMWF Model</h4></div>
+                    <img class="card-img-bottom" src="http://www.ims.gov.il/ims/publicpdf/ec_rain_forecast.png" />
+                    <div class="card-title text-info"><h4><i class="fa fa-satellite-dish text-muted"></i> COSMO Model</h4></div>
+                    <img class="card-img-bottom" src="http://ims.gov.il/ims/publicpdf/c3_rain_forecast.png" />
+                </div>
+            </div>
+
+
+            <div class="simple-footer">
+              Pixel &copy; 2020<br>
+            This site is used for private purposes.<br>
+            All data in the website is pulled from public external sources.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- Page Specific JS File -->
 </body>
 </html>
