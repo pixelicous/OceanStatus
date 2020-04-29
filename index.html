@@ -2,6 +2,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164926771-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-164926771-1');
+  </script>
+
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
   <title>OCEAN · LABS</title>
@@ -96,15 +106,66 @@
                     <div class="embed-responsive embed-responsive-16by9 mb-0 pb-0">
                         <iframe class="embed-responsive-item m-0 p-0" src="https://g0.ipcamlive.com/player/player.php?alias=freegullsouth" allowfullscreen></iframe>
                       </div>-->
-                      <div class="card-title text-info mt-2"><h4><i class="fa fa-wind text-muted"></i> Wind Condition (not working</h4></div>
-                      <img class="card-img-bottom" src="https://wind.co.il/weather/lab/broadcast.jpg?ts=1550326772" />
-                      <!--<img class="card-img-bottom" src="https://wind.co.il/weather/lab/vws736.jpg" />
-                      <img class="card-img-bottom" src="https://wind.co.il/weather/lab/vws1325.jpg" />
-                      <img class="card-img-bottom" src="https://wind.co.il/weather/lab/vws737.jpg" />
-                      <img class="card-img-bottom" src="https://wind.co.il/weather/lab/vws738.jpg" />
-                      <img class="card-img-bottom" src="https://wind.co.il/weather/lab/vws741.jpg" />
-                      <img class="card-img-bottom" src="https://wind.co.il/weather/lab/vws743.jpg" />
-                      <img class="card-img-bottom" src="https://wind.co.il/weather/lab/vws758.jpg" />-->
+                      <div class="refresh-images text-center">
+                        <div class="card-title text-info mt-2"><h4><i class="fa fa-wind text-muted"></i> Live wind conditions</h4></div>
+                        <div class="row">
+                          <div class="col-md-7">
+                            <div class="thumbnail">
+                              <a href="https://wind.co.il/weather/lab/broadcast.jpg">
+                                <img src="https://wind.co.il/weather/lab/broadcast.jpg" alt="Lights" style="width:100%">
+                              </a>
+                            </div>
+                          </div>
+                          <div class="col-md-5">
+                            <div class="thumbnail">
+                              <a href="https://wind.co.il/weather/lab/vws736.jpg">
+                                <img src="https://wind.co.il/weather/lab/vws736.jpg" alt="Lights" style="width:100%">
+                              </a>
+                            </div>
+                          </div>
+                          <div class="col-md-5">
+                            <div class="thumbnail">
+                              <a href="https://wind.co.il/weather/lab/vws1325.jpg">
+                                <img src="https://wind.co.il/weather/lab/vws1325.jpg" alt="Lights" style="width:100%">
+                              </a>
+                            </div>
+                          </div>
+                          <div class="col-md-5">
+                            <div class="thumbnail">
+                              <a href="https://wind.co.il/weather/lab/vws737.jpg">
+                                <img src="https://wind.co.il/weather/lab/vws737.jpg" alt="Lights" style="width:100%">
+                              </a>
+                            </div>
+                          </div>
+                          <div class="col-md-5">
+                            <div class="thumbnail">
+                              <a href="https://wind.co.il/weather/lab/vws738.jpg">
+                                <img src="https://wind.co.il/weather/lab/vws738.jpg" alt="Lights" style="width:100%">
+                              </a>
+                            </div>
+                          </div>
+                          <div class="col-md-5">
+                            <div class="thumbnail">
+                              <a href="https://wind.co.il/weather/lab/vws741.jpg">
+                                <img src="https://wind.co.il/weather/lab/vws741.jpg" alt="Lights" style="width:100%">
+                              </a>
+                            </div>
+                          </div>
+                          <div class="col-md-5">
+                            <div class="thumbnail">
+                              <a href="https://wind.co.il/weather/lab/vws743.jpg">
+                                <img src="https://wind.co.il/weather/lab/vws743.jpg" alt="Lights" style="width:100%">
+                              </a>
+                            </div>
+                          </div>
+                          <div class="col-md-5">
+                            <div class="thumbnail">
+                              <a href="https://wind.co.il/weather/lab/vws758.jpg">
+                                <img src="https://wind.co.il/weather/lab/vws758.jpg" alt="Lights" style="width:100%">
+                              </a>
+                            </div>
+                          </div>
+                      </div>
                 </div>
             </div>
 
@@ -191,6 +252,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="https://g0.ipcamlive.com/player/ipcamliveplayer.min.js?version=3"></script>
+  <script src="assets/js/main.js"></script>
 
   <!-- Page Specific JS File -->
 
